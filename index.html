@@ -21,6 +21,92 @@ nav{background:var(--blue);color:#fff}.nav{max-width:1120px;margin:auto;padding:
 .info{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.panel h3{margin:0 0 8px;color:var(--navy)}.panel p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.whatsapp-btn{display:inline-flex;align-items:center;gap:11px;margin-top:15px;padding:11px 17px;background:#25D366;color:#fff;border-radius:10px;font-size:14px;font-weight:750;box-shadow:0 5px 14px #25d36638;transition:transform .18s ease,background .18s ease}.whatsapp-btn:hover{background:#1fb85a;transform:translateY(-2px)}.whatsapp-icon{width:25px;height:25px;flex:0 0 25px}.whatsapp-note{display:block;margin-top:9px;color:var(--muted);font-size:12px}.contact-links{display:grid;gap:11px;margin-top:15px}.contact-card{display:flex;align-items:center;gap:13px;padding:12px 14px;border:1px solid transparent;border-radius:12px;min-width:0;transition:transform .18s ease,box-shadow .18s ease}.contact-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px #17233412}.contact-icon-wrap{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center}.contact-icon-wrap svg{width:23px;height:23px}.contact-copy{display:grid;gap:3px;min-width:0}.contact-copy small{font-size:11px;font-weight:650;opacity:.75}.contact-copy strong{font-size:14px;overflow-wrap:anywhere}.contact-arrow{margin-left:auto;font-size:25px;line-height:1;opacity:.55}.phone-card{background:#eef5ff;border-color:#d9e8ff;color:#174d9b}.phone-card .contact-icon-wrap{background:#d9e8ff;color:#2364c5}.email-card{background:#fff5eb;border-color:#ffe5cb;color:#a34d12}.email-card .contact-icon-wrap{background:#ffe5cb;color:#d97706}.whatsapp-card{background:#edfff3;border-color:#c9f2d7;color:#137a3b}.whatsapp-card .contact-icon-wrap{background:#c9f2d7;color:#159447}
 footer{margin-top:35px;background:var(--navy);color:#d9e5ef;padding:28px 20px;text-align:center;font-size:13px}footer strong{color:#fff}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.hero{padding:24px}.top{padding:8px 16px}.head{padding:14px 16px}.wrap{padding:0 14px}.nav{padding:0 16px}}
+
+/* Professional site-wide refresh */
+body{background:#f5f7fb;color:#18283a;line-height:1.55}
+.top{background:#091e34;padding:9px max(5%,calc((100% - 1120px)/2));font-size:12px;letter-spacing:.15px}
+header{background:rgba(255,255,255,.97);border-bottom:1px solid #e7edf4;box-shadow:0 4px 18px #0c23400a}
+.head{padding-top:20px;padding-bottom:20px}
+.logo{width:60px;height:60px;border-radius:17px;background:linear-gradient(145deg,#ed3546,#a80f2d 75%);box-shadow:0 8px 20px #d9273538;letter-spacing:-1px}
+h1{font-weight:850;letter-spacing:-.6px}
+.tag{font-size:12px;color:#718096}
+nav{background:#123e65;box-shadow:0 5px 15px #102b461c}
+.nav{gap:30px}
+.nav a{font-weight:650;position:relative;transition:color .2s}
+.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:7px;height:2px;background:#ffcf65;transition:right .2s}
+.nav a:hover{color:#ffdf9c}.nav a:hover:after{right:0}
+.wrap{max-width:1160px;margin:27px auto;padding:0 22px}
+.breaking{border:0;background:#fff;border-radius:11px;box-shadow:0 5px 20px #102b460b}
+.breaking b{background:linear-gradient(135deg,#e32f43,#bd1830);padding:12px 18px;font-size:13px;letter-spacing:.2px}
+.breaking span{color:#536477;font-weight:550}
+.hero{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:290px;margin-top:22px;padding:42px 44px;border-radius:20px;background:linear-gradient(115deg,#0b2744 0%,#124b76 58%,#16738a 100%);box-shadow:0 16px 35px #0b355326}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid #ffffff20;border-radius:50%}
+.hero:before{width:390px;height:390px;right:5%;top:-210px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}
+.hero:after{width:220px;height:220px;right:19%;bottom:-160px;background:#ffffff08}
+.hero-content{max-width:680px}
+.hero-label{display:inline-flex;padding:6px 12px;border-radius:30px;background:#ffffff18;border:1px solid #ffffff30;color:#ffdf9c;font-size:12px;font-weight:750;letter-spacing:.3px}
+.hero h2{font-size:clamp(29px,5vw,43px);line-height:1.2;margin:15px 0 12px;letter-spacing:-.7px}
+.hero p{font-size:15px;color:#e1edf7;max-width:600px;line-height:1.8}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:23px}
+.hero-primary,.hero-secondary{display:inline-flex;align-items:center;gap:12px;padding:11px 17px;border-radius:9px;font-size:13px;font-weight:800;transition:transform .2s,background .2s}
+.hero-primary{background:#ffd166;color:#18334b;box-shadow:0 6px 16px #071a2c30}
+.hero-primary:hover{background:#ffe09a;transform:translateY(-2px)}
+.hero-secondary{border:1px solid #ffffff70;color:#fff;background:#ffffff0c}
+.hero-secondary:hover{background:#ffffff20;transform:translateY(-2px)}
+.hero-mark{width:150px;height:150px;flex:0 0 150px;border-radius:35px;border:1px solid #ffffff4a;background:linear-gradient(145deg,#ffffff24,#ffffff08);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(5deg);box-shadow:0 15px 35px #071a2c30}
+.hero-mark span{font-size:37px;font-weight:950;letter-spacing:-2px;color:#fff}
+.hero-mark small{font-size:9px;font-weight:800;letter-spacing:2px;color:#ffdf9c}
+.section-title{margin:35px 0 17px}
+.section-title:before{width:5px;height:27px;background:linear-gradient(#f04454,#c61b34)}
+.section-title h2{font-size:22px;font-weight:850;letter-spacing:-.3px}
+.grid{gap:19px}
+.card{border:1px solid #e6ebf2;border-radius:16px;box-shadow:0 7px 22px #102b460b;transition:transform .22s,box-shadow .22s}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 28px #102b4618}
+.thumb{height:145px;background:linear-gradient(135deg,#e4f0fa,#fff0e9);font-size:40px}
+.body{padding:19px}
+.pill{background:#fff0f1;color:#c51e35;letter-spacing:.2px}
+.body h3{font-size:17px;font-weight:800;color:#1b3148}
+.body p{font-size:13px;line-height:1.8}
+.date{padding-top:10px;border-top:1px solid #edf0f4;color:#8996a6}
+.panel{border:1px solid #e6ebf2;border-radius:16px;padding:23px;box-shadow:0 7px 22px #102b4609}
+.panel h3{font-size:17px;font-weight:850;margin-bottom:12px}
+#sarpanch .panel{background:linear-gradient(110deg,#fff,#f1f7ff);border-left:4px solid #2d75bd}
+#sarpanch .panel h3{margin:0;color:#174d78}
+#about .panel{background:linear-gradient(110deg,#fff,#fff9f1)}
+.info{gap:19px}
+.contact-links{gap:12px}
+.contact-card{padding:13px 15px;border-radius:13px}
+footer{margin-top:48px;background:linear-gradient(120deg,#091e34,#123e65);padding:34px 20px;line-height:1.9}
+footer strong{font-size:17px;letter-spacing:.2px}
+@media(max-width:760px){
+ .top{padding:8px 14px}
+ .head{padding:15px 14px}
+ .logo{width:52px;height:52px;border-radius:15px;font-size:18px}
+ .nav{gap:23px;padding:0 15px}
+ .nav a{font-size:13px}
+ .wrap{padding:0 14px;margin:19px auto}
+ .hero{min-height:0;padding:27px 22px;border-radius:16px}
+ .hero-mark{width:82px;height:82px;flex-basis:82px;border-radius:22px;opacity:.9}
+ .hero-mark span{font-size:23px}
+ .hero-mark small{font-size:6px;letter-spacing:1px}
+ .hero h2{font-size:29px}
+ .hero p{font-size:13px}
+ .hero-primary,.hero-secondary{padding:10px 13px;font-size:12px}
+ .section-title{margin:29px 0 14px}
+ .grid{gap:14px}
+ .thumb{height:120px}
+ .panel{padding:18px}
+}
+@media(max-width:420px){
+ .hero{display:block}
+ .hero-mark{position:absolute;right:18px;top:18px;width:62px;height:62px;opacity:.55}
+ .hero-mark span{font-size:18px}
+ .hero-mark small{font-size:5px}
+ .hero-content{position:relative;z-index:1}
+ .hero h2{font-size:27px;max-width:290px}
+ .hero-actions{gap:8px}
+}
+
 </style>
 </head>
 <body>
@@ -29,7 +115,7 @@ footer{margin-top:35px;background:var(--navy);color:#d9e5ef;padding:28px 20px;te
 <nav><div class="nav"><a href="#home">होम</a><a href="#news">ताज़ा खबरें</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></div></nav>
 <main class="wrap" id="home">
 <div class="breaking"><b>अपडेट</b><span>Ahmedpura News Group की आधिकारिक वेबसाइट पर आपका स्वागत है।</span></div>
-<section class="hero"><small>WELCOME TO AHMEDPURA NEWS GROUP</small><h2>आपके गाँव और क्षेत्र की हर महत्वपूर्ण जानकारी</h2><p>स्थानीय समाचार, सामाजिक गतिविधियाँ, जनहित की जानकारी और क्षेत्र से जुड़े अपडेट — सब एक ही जगह।</p></section>
+<section class="hero"><div class="hero-content"><span class="hero-label">आपकी अपनी स्थानीय न्यूज़ वेबसाइट</span><h2>अहमदपुरा की हर खबर,<br>अब आपके मोबाइल पर</h2><p>स्थानीय समाचार, जनहित सूचनाएँ और गाँव की खास गतिविधियाँ — सही जानकारी, एक ही जगह।</p><div class="hero-actions"><a href="#news" class="hero-primary">ताज़ा खबरें देखें <span>→</span></a><a href="#contact" class="hero-secondary">हमसे संपर्क करें</a></div></div><div class="hero-mark" aria-hidden="true"><span>ANG</span><small>LOCAL NEWS</small></div></section>
 <section id="news"><div class="section-title"><h2>ताज़ा खबरें</h2></div><div class="grid">
 <article class="card"><div class="thumb">📰</div><div class="body"><span class="pill">स्थानीय समाचार</span><h3>यहाँ अहमदपुरा क्षेत्र की नई खबर प्रकाशित होगी</h3><p>यह डेमो कार्ड है। वास्तविक समाचार, तारीख और पूरी जानकारी मिलने पर इसे अपडेट करें।</p><div class="date">डेमो सामग्री</div></div></article>
 <article class="card"><div class="thumb">📢</div><div class="body"><span class="pill">जनहित सूचना</span><h3>महत्वपूर्ण सूचना और सार्वजनिक घोषणाएँ</h3><p>गाँव और आसपास के क्षेत्र की सत्यापित सूचनाएँ यहाँ साझा की जा सकती हैं।</p><div class="date">डेमो सामग्री</div></div></article>
