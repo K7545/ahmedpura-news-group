@@ -19,6 +19,7 @@ nav{background:var(--blue);color:#fff}.nav{max-width:1120px;margin:auto;padding:
 .section-title{display:flex;align-items:center;gap:10px;margin:28px 0 15px}.section-title:before{content:"";width:5px;height:25px;background:var(--red);border-radius:5px}.section-title h2{font-size:21px;margin:0;color:var(--navy)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px #17233408}.thumb{height:125px;background:linear-gradient(135deg,#dce8f2,#f5dfe1);display:grid;place-items:center;font-size:35px}.body{padding:16px}.pill{display:inline-block;background:#fff0f1;color:var(--red);font-size:11px;font-weight:800;padding:5px 9px;border-radius:30px}.body h3{font-size:17px;line-height:1.45;margin:10px 0 7px}.body p{font-size:13px;color:var(--muted);line-height:1.65;margin:0}.date{font-size:11px;color:#8995a4;margin-top:12px}
 .info{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.panel h3{margin:0 0 8px;color:var(--navy)}.panel p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.whatsapp-btn{display:inline-flex;align-items:center;gap:11px;margin-top:15px;padding:11px 17px;background:#25D366;color:#fff;border-radius:10px;font-size:14px;font-weight:750;box-shadow:0 5px 14px #25d36638;transition:transform .18s ease,background .18s ease}.whatsapp-btn:hover{background:#1fb85a;transform:translateY(-2px)}.whatsapp-icon{width:25px;height:25px;flex:0 0 25px}.whatsapp-note{display:block;margin-top:9px;color:var(--muted);font-size:12px}.contact-links{display:grid;gap:11px;margin-top:15px}.contact-card{display:flex;align-items:center;gap:13px;padding:12px 14px;border:1px solid transparent;border-radius:12px;min-width:0;transition:transform .18s ease,box-shadow .18s ease}.contact-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px #17233412}.contact-icon-wrap{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center}.contact-icon-wrap svg{width:23px;height:23px}.contact-copy{display:grid;gap:3px;min-width:0}.contact-copy small{font-size:11px;font-weight:650;opacity:.75}.contact-copy strong{font-size:14px;overflow-wrap:anywhere}.contact-arrow{margin-left:auto;font-size:25px;line-height:1;opacity:.55}.phone-card{background:#eef5ff;border-color:#d9e8ff;color:#174d9b}.phone-card .contact-icon-wrap{background:#d9e8ff;color:#2364c5}.email-card{background:#fff5eb;border-color:#ffe5cb;color:#a34d12}.email-card .contact-icon-wrap{background:#ffe5cb;color:#d97706}.whatsapp-card{background:#edfff3;border-color:#c9f2d7;color:#137a3b}.whatsapp-card .contact-icon-wrap{background:#c9f2d7;color:#159447}
+.news-loading{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;color:var(--muted);text-align:center}.news-photo{width:100%;height:180px;object-fit:cover;display:block}
 footer{margin-top:35px;background:var(--navy);color:#d9e5ef;padding:28px 20px;text-align:center;font-size:13px}footer strong{color:#fff}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.hero{padding:24px}.top{padding:8px 16px}.head{padding:14px 16px}.wrap{padding:0 14px}.nav{padding:0 16px}}
 
@@ -135,11 +136,7 @@ footer strong{font-size:17px;letter-spacing:.2px}
 <main class="wrap" id="home">
 <div class="breaking"><b>अपडेट</b><span>Ahmedpura News Group की आधिकारिक वेबसाइट पर आपका स्वागत है।</span></div>
 <section class="hero"><div class="hero-content"><span class="hero-label">आपकी अपनी स्थानीय न्यूज़ वेबसाइट</span><h2>अहमदपुरा की हर खबर,<br>अब आपके मोबाइल पर</h2><p>स्थानीय समाचार, जनहित सूचनाएँ और गाँव की खास गतिविधियाँ — सही जानकारी, एक ही जगह।</p><div class="hero-actions"><a href="#news" class="hero-primary">ताज़ा खबरें देखें <span>→</span></a><a href="#contact" class="hero-secondary">हमसे संपर्क करें</a></div></div><div class="hero-mark" aria-hidden="true"><span>ANG</span><small>LOCAL NEWS</small></div></section>
-<section id="news"><div class="section-title"><h2>ताज़ा खबरें</h2></div><div class="grid">
-<article class="card"><div class="thumb">📰</div><div class="body"><span class="pill">स्थानीय समाचार</span><h3>यहाँ अहमदपुरा क्षेत्र की नई खबर प्रकाशित होगी</h3><p>यह डेमो कार्ड है। वास्तविक समाचार, तारीख और पूरी जानकारी मिलने पर इसे अपडेट करें।</p><div class="date">डेमो सामग्री</div></div></article>
-<article class="card"><div class="thumb">📢</div><div class="body"><span class="pill">जनहित सूचना</span><h3>महत्वपूर्ण सूचना और सार्वजनिक घोषणाएँ</h3><p>गाँव और आसपास के क्षेत्र की सत्यापित सूचनाएँ यहाँ साझा की जा सकती हैं।</p><div class="date">डेमो सामग्री</div></div></article>
-<article class="card"><div class="thumb">🤝</div><div class="body"><span class="pill">समाज</span><h3>क्षेत्र की सामाजिक गतिविधियों की जानकारी</h3><p>कार्यक्रम, उपलब्धियाँ और सामुदायिक गतिविधियों की खबरें यहाँ प्रकाशित होंगी।</p><div class="date">डेमो सामग्री</div></div></article>
-</div></section>
+<section id="news"><div class="section-title"><h2>ताज़ा खबरें</h2></div><div class="grid" id="news-grid"><p class="news-loading">खबरें लोड हो रही हैं...</p></div></section>
 <section id="sarpanch"><div class="section-title"><h2>ग्राम पंचायत</h2></div><div class="panel"><h3>सरपंच: Jarnail Singh</h3></div></section>
 <section id="about"><div class="section-title"><h2>हमारे बारे में</h2></div><div class="panel"><p><strong>Ahmedpura News Group</strong> का उद्देश्य अहमदपुरा और आसपास के क्षेत्र से जुड़ी उपयोगी, स्पष्ट और सत्यापित जानकारी लोगों तक पहुँचाना है। खबर प्रकाशित करने से पहले उसकी पुष्टि अवश्य करें।</p></div></section>
 <section id="contact"><div class="section-title"><h2>संपर्क करें</h2></div><div class="info"><div class="panel"><h3>खबर या सूचना भेजें</h3><p>अपनी खबर, सुझाव या सुधार हमें भेजें। हमारी टीम तक आपकी जानकारी पहुँचाने के लिए नीचे दिए गए संपर्क विकल्पों का उपयोग करें।</p></div><div class="panel"><h3>संपर्क विवरण</h3><div class="contact-links">
@@ -149,5 +146,31 @@ footer strong{font-size:17px;letter-spacing:.2px}
 </div></div></div></section>
 </main>
 <footer><strong>Ahmedpura News Group</strong><br>आपके क्षेत्र की आवाज़<br><span>© <span id="year"></span> Ahmedpura News Group. सर्वाधिकार सुरक्षित।</span></footer>
-<script>const d=new Date();document.getElementById('today').textContent=d.toLocaleDateString('hi-IN',{day:'numeric',month:'long',year:'numeric'});document.getElementById('year').textContent=d.getFullYear();</script>
+<script>
+const d=new Date();
+document.getElementById('today').textContent=d.toLocaleDateString('hi-IN',{day:'numeric',month:'long',year:'numeric'});
+document.getElementById('year').textContent=d.getFullYear();
+async function loadNews(){
+ const grid=document.getElementById('news-grid');
+ try{
+  const response=await fetch('./news.json',{cache:'no-store'});
+  if(!response.ok) throw new Error('News data unavailable');
+  const items=await response.json();
+  if(!Array.isArray(items)) throw new Error('Invalid news data');
+  if(!items.length){grid.innerHTML='<p class="news-loading">अभी कोई खबर प्रकाशित नहीं हुई है। जल्द ही नई खबरें यहाँ दिखाई देंगी।</p>';return;}
+  items.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));
+  grid.innerHTML=items.map(item=>{
+   const title=escapeHTML(item.title||'');
+   const category=escapeHTML(item.category||'समाचार');
+   const summary=escapeHTML(item.summary||'');
+   const date=escapeHTML(item.displayDate||item.date||'');
+   const image=item.image?'<img class="news-photo" src="'+escapeAttribute(item.image)+'" alt="'+title+'" loading="lazy">':'<div class="thumb">📰</div>';
+   return '<article class="card">'+image+'<div class="body"><span class="pill">'+category+'</span><h3>'+title+'</h3><p>'+summary+'</p><div class="date">'+date+'</div></div></article>';
+  }).join('');
+ }catch(error){grid.innerHTML='<p class="news-loading">खबरें अभी लोड नहीं हो पाईं। कृपया थोड़ी देर बाद फिर कोशिश करें।</p>';}
+}
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function escapeAttribute(value){return escapeHTML(value);}
+loadNews();
+</script>
 </body></html>
