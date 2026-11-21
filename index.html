@@ -3,174 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#102b46">
+<meta name="theme-color" content="#10243a">
 <title>Ahmedpura News Group | अहमदपुरा न्यूज़ ग्रुप</title>
-<meta name="description" content="Ahmedpura News Group — आपके क्षेत्र की खबरें, अपडेट और महत्वपूर्ण जानकारी।">
+<meta name="description" content="अहमदपुरा और आसपास के क्षेत्र की ताज़ा खबरें, जनहित सूचनाएँ और स्थानीय अपडेट।">
 <style>
-:root{--navy:#102b46;--blue:#174d78;--red:#d92735;--ink:#172334;--muted:#657386;--paper:#f3f6fa;--line:#e4e9ef}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;background:var(--paper);color:var(--ink)}
-a{color:inherit;text-decoration:none}.top{background:var(--navy);color:#fff;font-size:13px;padding:8px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-header{background:#fff;border-bottom:1px solid var(--line)}.head{max-width:1120px;margin:auto;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;border-radius:14px;background:linear-gradient(145deg,var(--red),#a80f21);display:grid;place-items:center;color:white;font-weight:900;font-size:20px;box-shadow:0 5px 14px #d9273533}
-h1{font-size:clamp(20px,4vw,28px);margin:0;color:var(--navy)}.tag{color:var(--muted);font-size:12px;margin-top:3px}
-nav{background:var(--blue);color:#fff}.nav{max-width:1120px;margin:auto;padding:0 20px;display:flex;gap:24px;overflow:auto}.nav a{padding:13px 0;white-space:nowrap;font-size:14px}
-.wrap{max-width:1120px;margin:24px auto;padding:0 20px}.breaking{background:#fff;border:1px solid var(--line);display:flex;align-items:center;overflow:hidden;border-radius:9px}.breaking b{background:var(--red);color:#fff;padding:12px 15px;white-space:nowrap}.breaking span{padding:10px 14px;color:var(--muted);font-size:14px}
-.hero{margin-top:20px;background:linear-gradient(120deg,#102b46,#1d5b87);color:#fff;padding:32px;border-radius:14px}.hero small{color:#c9dced;font-weight:700;letter-spacing:.5px}.hero h2{font-size:clamp(25px,5vw,38px);line-height:1.25;margin:10px 0}.hero p{color:#e2edf6;max-width:650px;line-height:1.7;margin:0}
-.section-title{display:flex;align-items:center;gap:10px;margin:28px 0 15px}.section-title:before{content:"";width:5px;height:25px;background:var(--red);border-radius:5px}.section-title h2{font-size:21px;margin:0;color:var(--navy)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px #17233408}.thumb{height:125px;background:linear-gradient(135deg,#dce8f2,#f5dfe1);display:grid;place-items:center;font-size:35px}.body{padding:16px}.pill{display:inline-block;background:#fff0f1;color:var(--red);font-size:11px;font-weight:800;padding:5px 9px;border-radius:30px}.body h3{font-size:17px;line-height:1.45;margin:10px 0 7px}.body p{font-size:13px;color:var(--muted);line-height:1.65;margin:0}.date{font-size:11px;color:#8995a4;margin-top:12px}
-.info{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.panel h3{margin:0 0 8px;color:var(--navy)}.panel p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.whatsapp-btn{display:inline-flex;align-items:center;gap:11px;margin-top:15px;padding:11px 17px;background:#25D366;color:#fff;border-radius:10px;font-size:14px;font-weight:750;box-shadow:0 5px 14px #25d36638;transition:transform .18s ease,background .18s ease}.whatsapp-btn:hover{background:#1fb85a;transform:translateY(-2px)}.whatsapp-icon{width:25px;height:25px;flex:0 0 25px}.whatsapp-note{display:block;margin-top:9px;color:var(--muted);font-size:12px}.contact-links{display:grid;gap:11px;margin-top:15px}.contact-card{display:flex;align-items:center;gap:13px;padding:12px 14px;border:1px solid transparent;border-radius:12px;min-width:0;transition:transform .18s ease,box-shadow .18s ease}.contact-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px #17233412}.contact-icon-wrap{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center}.contact-icon-wrap svg{width:23px;height:23px}.contact-copy{display:grid;gap:3px;min-width:0}.contact-copy small{font-size:11px;font-weight:650;opacity:.75}.contact-copy strong{font-size:14px;overflow-wrap:anywhere}.contact-arrow{margin-left:auto;font-size:25px;line-height:1;opacity:.55}.phone-card{background:#eef5ff;border-color:#d9e8ff;color:#174d9b}.phone-card .contact-icon-wrap{background:#d9e8ff;color:#2364c5}.email-card{background:#fff5eb;border-color:#ffe5cb;color:#a34d12}.email-card .contact-icon-wrap{background:#ffe5cb;color:#d97706}.whatsapp-card{background:#edfff3;border-color:#c9f2d7;color:#137a3b}.whatsapp-card .contact-icon-wrap{background:#c9f2d7;color:#159447}
-.news-loading{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;color:var(--muted);text-align:center}.news-photo{width:100%;height:180px;object-fit:cover;display:block}
-footer{margin-top:35px;background:var(--navy);color:#d9e5ef;padding:28px 20px;text-align:center;font-size:13px}footer strong{color:#fff}
-@media(max-width:760px){.grid{grid-template-columns:1fr}.info{grid-template-columns:1fr}.hero{padding:24px}.top{padding:8px 16px}.head{padding:14px 16px}.wrap{padding:0 14px}.nav{padding:0 16px}}
-
-/* Professional site-wide refresh */
-body{background:#f5f7fb;color:#18283a;line-height:1.55}
-.top{background:#091e34;padding:9px max(5%,calc((100% - 1120px)/2));font-size:12px;letter-spacing:.15px}
-header{background:rgba(255,255,255,.97);border-bottom:1px solid #e7edf4;box-shadow:0 4px 18px #0c23400a}
-.head{padding-top:20px;padding-bottom:20px}
-.logo{width:60px;height:60px;border-radius:17px;background:linear-gradient(145deg,#ed3546,#a80f2d 75%);box-shadow:0 8px 20px #d9273538;letter-spacing:-1px}
-h1{font-weight:850;letter-spacing:-.6px}
-.tag{font-size:12px;color:#718096}
-nav{background:#123e65;box-shadow:0 5px 15px #102b461c}
-.nav{gap:30px}
-.nav a{font-weight:650;position:relative;transition:color .2s}
-.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:7px;height:2px;background:#ffcf65;transition:right .2s}
-.nav a:hover{color:#ffdf9c}.nav a:hover:after{right:0}
-.wrap{max-width:1160px;margin:27px auto;padding:0 22px}
-.breaking{border:0;background:#fff;border-radius:11px;box-shadow:0 5px 20px #102b460b}
-.breaking b{background:linear-gradient(135deg,#e32f43,#bd1830);padding:12px 18px;font-size:13px;letter-spacing:.2px}
-.breaking span{color:#536477;font-weight:550}
-.hero{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:290px;margin-top:22px;padding:42px 44px;border-radius:20px;background:linear-gradient(115deg,#0b2744 0%,#124b76 58%,#16738a 100%);box-shadow:0 16px 35px #0b355326}
-.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid #ffffff20;border-radius:50%}
-.hero:before{width:390px;height:390px;right:5%;top:-210px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}
-.hero:after{width:220px;height:220px;right:19%;bottom:-160px;background:#ffffff08}
-.hero-content{max-width:680px}
-.hero-label{display:inline-flex;padding:6px 12px;border-radius:30px;background:#ffffff18;border:1px solid #ffffff30;color:#ffdf9c;font-size:12px;font-weight:750;letter-spacing:.3px}
-.hero h2{font-size:clamp(29px,5vw,43px);line-height:1.2;margin:15px 0 12px;letter-spacing:-.7px}
-.hero p{font-size:15px;color:#e1edf7;max-width:600px;line-height:1.8}
-.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:23px}
-.hero-primary,.hero-secondary{display:inline-flex;align-items:center;gap:12px;padding:11px 17px;border-radius:9px;font-size:13px;font-weight:800;transition:transform .2s,background .2s}
-.hero-primary{background:#ffd166;color:#18334b;box-shadow:0 6px 16px #071a2c30}
-.hero-primary:hover{background:#ffe09a;transform:translateY(-2px)}
-.hero-secondary{border:1px solid #ffffff70;color:#fff;background:#ffffff0c}
-.hero-secondary:hover{background:#ffffff20;transform:translateY(-2px)}
-.hero-mark{width:150px;height:150px;flex:0 0 150px;border-radius:35px;border:1px solid #ffffff4a;background:linear-gradient(145deg,#ffffff24,#ffffff08);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(5deg);box-shadow:0 15px 35px #071a2c30}
-.hero-mark span{font-size:37px;font-weight:950;letter-spacing:-2px;color:#fff}
-.hero-mark small{font-size:9px;font-weight:800;letter-spacing:2px;color:#ffdf9c}
-.section-title{margin:35px 0 17px}
-.section-title:before{width:5px;height:27px;background:linear-gradient(#f04454,#c61b34)}
-.section-title h2{font-size:22px;font-weight:850;letter-spacing:-.3px}
-.grid{gap:19px}
-.card{border:1px solid #e6ebf2;border-radius:16px;box-shadow:0 7px 22px #102b460b;transition:transform .22s,box-shadow .22s}
-.card:hover{transform:translateY(-5px);box-shadow:0 14px 28px #102b4618}
-.thumb{height:145px;background:linear-gradient(135deg,#e4f0fa,#fff0e9);font-size:40px}
-.body{padding:19px}
-.pill{background:#fff0f1;color:#c51e35;letter-spacing:.2px}
-.body h3{font-size:17px;font-weight:800;color:#1b3148}
-.body p{font-size:13px;line-height:1.8}
-.date{padding-top:10px;border-top:1px solid #edf0f4;color:#8996a6}
-.panel{border:1px solid #e6ebf2;border-radius:16px;padding:23px;box-shadow:0 7px 22px #102b4609}
-.panel h3{font-size:17px;font-weight:850;margin-bottom:12px}
-#sarpanch .panel{background:linear-gradient(110deg,#fff,#f1f7ff);border-left:4px solid #2d75bd}
-#sarpanch .panel h3{margin:0;color:#174d78}
-#about .panel{background:linear-gradient(110deg,#fff,#fff9f1)}
-.info{gap:19px}
-.contact-links{gap:12px}
-.contact-card{padding:13px 15px;border-radius:13px}
-footer{margin-top:48px;background:linear-gradient(120deg,#091e34,#123e65);padding:34px 20px;line-height:1.9}
-footer strong{font-size:17px;letter-spacing:.2px}
-@media(max-width:760px){
- .top{padding:8px 14px}
- .head{padding:15px 14px}
- .logo{width:52px;height:52px;border-radius:15px;font-size:18px}
- .nav{gap:23px;padding:0 15px}
- .nav a{font-size:13px}
- .wrap{padding:0 14px;margin:19px auto}
- .hero{min-height:0;padding:27px 22px;border-radius:16px}
- .hero-mark{width:82px;height:82px;flex-basis:82px;border-radius:22px;opacity:.9}
- .hero-mark span{font-size:23px}
- .hero-mark small{font-size:6px;letter-spacing:1px}
- .hero h2{font-size:29px}
- .hero p{font-size:13px}
- .hero-primary,.hero-secondary{padding:10px 13px;font-size:12px}
- .section-title{margin:29px 0 14px}
- .grid{gap:14px}
- .thumb{height:120px}
- .panel{padding:18px}
-}
-@media(max-width:420px){
- .hero{display:block}
- .hero-mark{position:absolute;right:18px;top:18px;width:62px;height:62px;opacity:.55}
- .hero-mark span{font-size:18px}
- .hero-mark small{font-size:5px}
- .hero-content{position:relative;z-index:1}
- .hero h2{font-size:27px;max-width:290px}
- .hero-actions{gap:8px}
-}
-
-
-/* Compact single-row contact details */
-.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
-.contact-card{gap:7px;padding:8px 9px;border-radius:10px;min-width:0;overflow:hidden}
-.contact-icon-wrap{width:28px;height:28px;flex:0 0 28px;border-radius:8px}
-.contact-icon-wrap svg{width:16px;height:16px}
-.contact-copy{gap:1px;min-width:0}
-.contact-copy small{font-size:9px;white-space:nowrap}
-.contact-copy strong{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.contact-arrow{display:none}
-@media(max-width:420px){
- .contact-links{gap:5px}
- .contact-card{gap:5px;padding:7px 5px}
- .contact-icon-wrap{width:24px;height:24px;flex-basis:24px}
- .contact-icon-wrap svg{width:14px;height:14px}
- .contact-copy small{font-size:8px}
- .contact-copy strong{font-size:9px}
-}
-
+:root{--navy:#10243a;--navy2:#183b5b;--blue:#17608a;--red:#d92d42;--gold:#f4c76b;--ink:#1b2b3b;--muted:#68798b;--paper:#f3f6fa;--line:#e4eaf1;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:18px}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1160px,calc(100% - 36px));margin:auto}
+.topbar{background:#0b1b2c;color:#dce7f1;font-size:12px}.topbar-inner{min-height:35px;display:flex;align-items:center;justify-content:space-between;gap:12px}.topbar strong{color:var(--gold)}
+header{background:#fff;border-bottom:1px solid var(--line)}.masthead{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 0}.brand{display:flex;align-items:center;gap:13px;min-width:0}.logo{width:59px;height:59px;flex:0 0 59px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,#ed4855,#a91530);color:#fff;font-size:19px;font-weight:950;letter-spacing:-1px;box-shadow:0 7px 17px #d92d4233}.brand h1{margin:0;color:var(--navy);font-size:clamp(19px,3.2vw,27px);font-weight:900;letter-spacing:-.5px}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.edition{color:#536579;text-align:right;font-size:12px;line-height:1.7}.edition b{display:block;color:var(--navy);font-size:13px}
+nav{background:var(--navy2);color:#fff}.nav-inner{display:flex;align-items:center;gap:27px;overflow-x:auto;scrollbar-width:none}.nav-inner::-webkit-scrollbar{display:none}.nav-inner a{padding:14px 0;white-space:nowrap;font-size:13px;font-weight:750;position:relative}.nav-inner a:hover{color:var(--gold)}.nav-inner a:first-child{color:var(--gold)}
+main{padding:20px 0 42px}.ticker{display:flex;align-items:stretch;overflow:hidden;border-radius:9px;background:#fff;box-shadow:0 4px 15px #10243a0b}.ticker-label{background:var(--red);color:#fff;padding:11px 15px;font-size:12px;font-weight:900;white-space:nowrap}.ticker-text{padding:10px 14px;color:#526477;font-size:13px;display:flex;align-items:center}
+.hero{margin-top:18px;min-height:285px;position:relative;overflow:hidden;border-radius:18px;padding:38px 40px;color:#fff;background:linear-gradient(112deg,#0d2742 0%,#14547d 62%,#197d8b 100%);box-shadow:0 15px 32px #102b4625}.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff20;border-radius:50%;pointer-events:none}.hero:before{width:390px;height:390px;right:5%;top:-220px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}.hero:after{width:220px;height:220px;right:22%;bottom:-165px}.hero-content{position:relative;z-index:1;max-width:690px}.eyebrow{display:inline-block;border:1px solid #ffffff45;background:#ffffff16;color:#ffdf9a;border-radius:30px;padding:6px 12px;font-size:11px;font-weight:850;letter-spacing:.3px}.hero h2{font-size:clamp(28px,5vw,43px);line-height:1.2;letter-spacing:-.8px;margin:14px 0 11px}.hero p{max-width:600px;margin:0;color:#e3edf5;font-size:14px;line-height:1.85}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:9px;font-size:12px;font-weight:850}.btn-gold{background:var(--gold);color:#24374a}.btn-outline{border:1px solid #ffffff75;color:#fff;background:#ffffff0c}.hero-stamp{position:absolute;right:7%;top:50%;transform:translateY(-50%) rotate(5deg);width:142px;height:142px;border:1px solid #ffffff55;border-radius:30px;background:#ffffff13;display:grid;place-content:center;text-align:center;box-shadow:0 14px 30px #071a2c35}.hero-stamp b{font-size:37px;letter-spacing:-2px}.hero-stamp span{font-size:9px;letter-spacing:2px;color:var(--gold);font-weight:900}
+.section{margin-top:30px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.section-title{display:flex;align-items:center;gap:10px;margin:0;color:var(--navy);font-size:21px;font-weight:900}.section-title:before{content:"";width:5px;height:25px;border-radius:8px;background:linear-gradient(var(--red),#a91530)}.section-sub{font-size:12px;color:var(--muted)}
+.news-tools{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.search{flex:1 1 190px;min-width:0;border:1px solid var(--line);border-radius:9px;background:#fff;padding:10px 12px;color:var(--ink);outline:none}.search:focus{border-color:#4b8bb7;box-shadow:0 0 0 3px #17608a18}.filters{display:flex;gap:7px;overflow:auto;max-width:100%;scrollbar-width:none}.filter{border:1px solid var(--line);background:#fff;color:#526477;border-radius:30px;padding:9px 13px;font-size:11px;font-weight:800;white-space:nowrap;cursor:pointer}.filter.active,.filter:hover{background:var(--navy2);color:#fff;border-color:var(--navy2)}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.news-card{background:#fff;border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 5px 18px #10243a0a;transition:transform .2s,box-shadow .2s}.news-card:hover{transform:translateY(-4px);box-shadow:0 12px 25px #10243a16}.news-photo,.news-placeholder{width:100%;height:170px;object-fit:cover;display:block}.news-placeholder{display:grid;place-items:center;background:linear-gradient(135deg,#e3edf6,#fff0e9);font-size:42px}.news-content{padding:16px}.category{display:inline-block;border-radius:30px;background:#fff0f1;color:#bd2037;padding:5px 9px;font-size:10px;font-weight:900}.news-content h3{font-size:16px;line-height:1.5;margin:10px 0 7px;color:#1b3148}.news-content p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}.news-date{font-size:10px;color:#8a97a6;border-top:1px solid #edf0f4;margin-top:12px;padding-top:10px}.empty{grid-column:1/-1;text-align:center;background:#fff;border:1px dashed #cbd6e1;border-radius:12px;padding:27px 15px;color:var(--muted);font-size:13px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:17px}.panel{background:#fff;border:1px solid var(--line);border-radius:13px;padding:21px;box-shadow:0 5px 18px #10243a08}.panel h3{margin:0 0 9px;color:var(--navy);font-size:16px}.panel p{margin:0;color:var(--muted);font-size:13px;line-height:1.85}.sarpanch-panel{border-left:4px solid #2877b8;background:linear-gradient(110deg,#fff,#f0f7ff)}.sarpanch-name{font-size:18px!important;color:#174d78!important;font-weight:900}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:15px}.contact-card{display:flex;align-items:center;gap:7px;min-width:0;padding:10px 8px;border:1px solid transparent;border-radius:10px}.contact-icon{width:29px;height:29px;flex:0 0 29px;border-radius:8px;display:grid;place-items:center;font-size:15px}.contact-copy{min-width:0;display:grid;gap:2px}.contact-copy small{font-size:9px;opacity:.75;white-space:nowrap}.contact-copy strong{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.phone{background:#eef5ff;border-color:#d9e8ff;color:#174d9b}.phone .contact-icon{background:#d9e8ff}.email{background:#fff5eb;border-color:#ffe5cb;color:#a34d12}.email .contact-icon{background:#ffe5cb}.whatsapp{background:#edfff3;border-color:#c9f2d7;color:#137a3b}.whatsapp .contact-icon{background:#c9f2d7}
+footer{background:#0b1d30;color:#c7d5e2;padding:30px 0;text-align:center;font-size:12px;line-height:1.9}footer b{font-size:17px;color:#fff}footer .footer-tag{color:var(--gold)}
+@media(max-width:760px){.container{width:min(100% - 28px,1160px)}.masthead{padding:13px 0}.logo{width:50px;height:50px;flex-basis:50px;border-radius:14px;font-size:17px}.brand{gap:10px}.brand p{font-size:10px}.edition{font-size:10px}.nav-inner{gap:22px}.hero{padding:27px 22px;min-height:245px}.hero h2{font-size:30px}.hero p{font-size:12px;max-width:480px}.hero-stamp{right:5%;width:88px;height:88px;border-radius:22px}.hero-stamp b{font-size:24px}.hero-stamp span{font-size:6px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.news-photo,.news-placeholder{height:135px}.news-content{padding:13px}.news-content h3{font-size:14px}.two-col,.contact-grid{grid-template-columns:1fr}.section{margin-top:25px}}
+@media(max-width:480px){.topbar-inner{font-size:10px}.edition{display:none}.hero{min-height:0;padding:25px 19px}.hero h2{font-size:27px;max-width:275px}.hero-stamp{right:15px;top:17px;transform:none;width:59px;height:59px;opacity:.6}.hero-stamp b{font-size:17px}.hero-stamp span{font-size:5px;letter-spacing:1px}.hero-content{position:relative;z-index:2}.hero p{max-width:100%}.btn{padding:10px 12px;font-size:11px}.section-title{font-size:19px}.section-sub{display:none}.news-grid{grid-template-columns:1fr}.news-photo,.news-placeholder{height:185px}.news-content{padding:16px}.news-content h3{font-size:16px}.contact-links{gap:5px}.contact-card{gap:5px;padding:8px 5px}.contact-icon{width:24px;height:24px;flex-basis:24px;font-size:12px}.contact-copy small{font-size:8px}.contact-copy strong{font-size:9px}}
 </style>
 </head>
 <body>
-<div class="top"><span>आपके क्षेत्र की खबरें और अपडेट</span><span id="today"></span></div>
-<header><div class="head"><div class="brand"><div class="logo">ANG</div><div><h1>Ahmedpura News Group</h1><div class="tag">अहमदपुरा की आवाज़ · सच्ची खबर, सही जानकारी</div></div></div></div></header>
-<nav><div class="nav"><a href="#home">होम</a><a href="#news">ताज़ा खबरें</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></div></nav>
-<main class="wrap" id="home">
-<div class="breaking"><b>अपडेट</b><span>Ahmedpura News Group की आधिकारिक वेबसाइट पर आपका स्वागत है।</span></div>
-<section class="hero"><div class="hero-content"><span class="hero-label">आपकी अपनी स्थानीय न्यूज़ वेबसाइट</span><h2>अहमदपुरा की हर खबर,<br>अब आपके मोबाइल पर</h2><p>स्थानीय समाचार, जनहित सूचनाएँ और गाँव की खास गतिविधियाँ — सही जानकारी, एक ही जगह।</p><div class="hero-actions"><a href="#news" class="hero-primary">ताज़ा खबरें देखें <span>→</span></a><a href="#contact" class="hero-secondary">हमसे संपर्क करें</a></div></div><div class="hero-mark" aria-hidden="true"><span>ANG</span><small>LOCAL NEWS</small></div></section>
-<section id="news"><div class="section-title"><h2>ताज़ा खबरें</h2></div><div class="grid" id="news-grid"><p class="news-loading">खबरें लोड हो रही हैं...</p></div></section>
-<section id="sarpanch"><div class="section-title"><h2>ग्राम पंचायत</h2></div><div class="panel"><h3>सरपंच: Jarnail Singh</h3></div></section>
-<section id="about"><div class="section-title"><h2>हमारे बारे में</h2></div><div class="panel"><p><strong>Ahmedpura News Group</strong> का उद्देश्य अहमदपुरा और आसपास के क्षेत्र से जुड़ी उपयोगी, स्पष्ट और सत्यापित जानकारी लोगों तक पहुँचाना है। खबर प्रकाशित करने से पहले उसकी पुष्टि अवश्य करें।</p></div></section>
-<section id="contact"><div class="section-title"><h2>संपर्क करें</h2></div><div class="info"><div class="panel"><h3>खबर या सूचना भेजें</h3><p>अपनी खबर, सुझाव या सुधार हमें भेजें। हमारी टीम तक आपकी जानकारी पहुँचाने के लिए नीचे दिए गए संपर्क विकल्पों का उपयोग करें।</p></div><div class="panel"><h3>संपर्क विवरण</h3><div class="contact-links">
-<a class="contact-card phone-card" href="tel:+917878195802"><span class="contact-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8h10.8a1.8 1.8 0 0 1 1.8 1.8v14.8a1.8 1.8 0 0 1-1.8 1.8H6.6a1.8 1.8 0 0 1-1.8-1.8V4.6a1.8 1.8 0 0 1 1.8-1.8Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 5.5h6M10 18.2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="contact-copy"><small>मोबाइल नंबर</small><strong>7878195802</strong></span><span class="contact-arrow">›</span></a>
-<a class="contact-card email-card" href="mailto:k75451829@gmail.com"><span class="contact-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="contact-copy"><small>ईमेल आईडी</small><strong>k75451829@gmail.com</strong></span><span class="contact-arrow">›</span></a>
-<a class="contact-card whatsapp-card" href="https://chat.whatsapp.com/EGjtzZi3jDV6EiFyyJWBg6?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener"><span class="contact-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.8a8.2 8.2 0 1 1 16-3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.2 8.2c.3-.5.5-.5.8-.5h.5c.2 0 .3.1.4.3l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4 0 .6.4.7 1 1.3 1.8 1.8.3.2.4.2.6 0l.7-.8c.2-.2.4-.2.6-.1l1.7.8c.2.1.3.2.3.4 0 .3-.2 1-.6 1.4-.4.4-1 .6-1.7.6-1-.1-2.1-.6-3.4-1.7-1.3-1.1-2.2-2.6-2.5-3.5-.2-.8.1-1.6.7-2.2Z" fill="currentColor"/></svg></span><span class="contact-copy"><small>WhatsApp ग्रुप</small><strong>ग्रुप से जुड़ें</strong></span><span class="contact-arrow">›</span></a>
+<div class="topbar"><div class="container topbar-inner"><span><strong>अहमदपुरा की आवाज़</strong> · सच्ची खबर, सही जानकारी</span><span id="today"></span></div></div>
+<header><div class="container masthead"><a class="brand" href="#home" aria-label="Ahmedpura News Group होम"><div class="logo">ANG</div><div><h1>Ahmedpura News Group</h1><p>अहमदपुरा और आसपास की ताज़ा खबरें</p></div></a><div class="edition"><b>LOCAL NEWS NETWORK</b>आपकी अपनी स्थानीय न्यूज़ वेबसाइट</div></div></header>
+<nav><div class="container nav-inner"><a href="#home">होम</a><a href="#news">ताज़ा खबरें</a><a href="#sarpanch">ग्राम पंचायत</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क करें</a></div></nav>
+<main class="container" id="home">
+<div class="ticker"><span class="ticker-label">न्यूज़ अपडेट</span><div class="ticker-text">Ahmedpura News Group की आधिकारिक वेबसाइट पर आपका स्वागत है। अपने क्षेत्र की खबरें और महत्वपूर्ण सूचनाएँ यहाँ पढ़ें।</div></div>
+<section class="hero"><div class="hero-content"><span class="eyebrow">आपकी अपनी स्थानीय न्यूज़ वेबसाइट</span><h2>अहमदपुरा की हर खबर,<br>अब आपके मोबाइल पर</h2><p>स्थानीय समाचार, जनहित सूचनाएँ और गाँव की खास गतिविधियाँ — सही जानकारी, एक ही जगह।</p><div class="hero-actions"><a class="btn btn-gold" href="#news">ताज़ा खबरें देखें&nbsp; →</a><a class="btn btn-outline" href="#contact">खबर भेजें</a></div></div><div class="hero-stamp" aria-hidden="true"><b>ANG</b><span>LOCAL NEWS</span></div></section>
+<section class="section" id="news"><div class="section-head"><h2 class="section-title">ताज़ा खबरें</h2><span class="section-sub">अहमदपुरा और आसपास की अपडेट</span></div><div class="news-tools"><input class="search" id="news-search" type="search" placeholder="खबर खोजें..." aria-label="खबर खोजें"><div class="filters" id="news-filters"><button class="filter active" type="button" data-category="all">सभी खबरें</button><button class="filter" type="button" data-category="स्थानीय">स्थानीय</button><button class="filter" type="button" data-category="पंचायत">पंचायत</button><button class="filter" type="button" data-category="शिक्षा">शिक्षा</button><button class="filter" type="button" data-category="खेल">खेल</button></div></div><div class="news-grid" id="news-grid"><p class="empty">खबरें लोड हो रही हैं...</p></div></section>
+<section class="section" id="sarpanch"><div class="section-head"><h2 class="section-title">ग्राम पंचायत</h2></div><div class="panel sarpanch-panel"><h3>ग्राम पंचायत अहमदपुरा</h3><p class="sarpanch-name">सरपंच: Jarnail Singh</p><p>गाँव से जुड़ी पंचायत की सूचनाएँ और जनहित अपडेट यहाँ साझा किए जा सकते हैं।</p></div></section>
+<section class="section" id="about"><div class="section-head"><h2 class="section-title">हमारे बारे में</h2></div><div class="panel"><p><strong>Ahmedpura News Group</strong> का उद्देश्य अहमदपुरा और आसपास के क्षेत्र से जुड़ी उपयोगी, स्पष्ट और सत्यापित जानकारी लोगों तक पहुँचाना है। हमारा प्रयास है कि स्थानीय समाचार, जनहित सूचनाएँ और गाँव की गतिविधियाँ एक ही मंच पर उपलब्ध हों। खबर प्रकाशित करने से पहले उसकी पुष्टि अवश्य करें।</p></div></section>
+<section class="section" id="contact"><div class="section-head"><h2 class="section-title">संपर्क करें</h2></div><div class="contact-grid"><div class="panel"><h3>आपकी खबर हमारे लिए महत्वपूर्ण है</h3><p>अपने क्षेत्र की खबर, सुझाव या जरूरी सूचना हम तक पहुँचाएँ। जानकारी भेजते समय सही विवरण और उपलब्ध हो तो फोटो भी साझा करें।</p></div><div class="panel"><h3>संपर्क विवरण</h3><div class="contact-links">
+<a class="contact-card phone" href="tel:+917878195802"><span class="contact-icon">☎</span><span class="contact-copy"><small>मोबाइल नंबर</small><strong>7878195802</strong></span></a>
+<a class="contact-card email" href="mailto:k75451829@gmail.com"><span class="contact-icon">✉</span><span class="contact-copy"><small>ईमेल आईडी</small><strong>k75451829@gmail.com</strong></span></a>
+<a class="contact-card whatsapp" href="https://chat.whatsapp.com/EGjtzZi3jDV6EiFyyJWBg6?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span class="contact-copy"><small>WhatsApp ग्रुप</small><strong>ग्रुप से जुड़ें</strong></span></a>
 </div></div></div></section>
 </main>
-<footer><strong>Ahmedpura News Group</strong><br>आपके क्षेत्र की आवाज़<br><span>© <span id="year"></span> Ahmedpura News Group. सर्वाधिकार सुरक्षित।</span></footer>
+<footer><div class="container"><b>Ahmedpura News Group</b><br><span class="footer-tag">आपके क्षेत्र की आवाज़</span><br>© <span id="year"></span> Ahmedpura News Group. सर्वाधिकार सुरक्षित।</div></footer>
 <script>
-const d=new Date();
-document.getElementById('today').textContent=d.toLocaleDateString('hi-IN',{day:'numeric',month:'long',year:'numeric'});
-document.getElementById('year').textContent=d.getFullYear();
-async function loadNews(){
- const grid=document.getElementById('news-grid');
- try{
-  const response=await fetch('./news.json',{cache:'no-store'});
-  if(!response.ok) throw new Error('News data unavailable');
-  const items=await response.json();
-  if(!Array.isArray(items)) throw new Error('Invalid news data');
-  if(!items.length){grid.innerHTML='<p class="news-loading">अभी कोई खबर प्रकाशित नहीं हुई है। जल्द ही नई खबरें यहाँ दिखाई देंगी।</p>';return;}
-  items.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));
-  grid.innerHTML=items.map(item=>{
-   const title=escapeHTML(item.title||'');
-   const category=escapeHTML(item.category||'समाचार');
-   const summary=escapeHTML(item.summary||'');
-   const date=escapeHTML(item.displayDate||item.date||'');
-   const image=item.image?'<img class="news-photo" src="'+escapeAttribute(item.image)+'" alt="'+title+'" loading="lazy">':'<div class="thumb">📰</div>';
-   return '<article class="card">'+image+'<div class="body"><span class="pill">'+category+'</span><h3>'+title+'</h3><p>'+summary+'</p><div class="date">'+date+'</div></div></article>';
-  }).join('');
- }catch(error){grid.innerHTML='<p class="news-loading">खबरें अभी लोड नहीं हो पाईं। कृपया थोड़ी देर बाद फिर कोशिश करें।</p>';}
-}
-function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function escapeAttribute(value){return escapeHTML(value);}
-loadNews();
+const now=new Date();document.getElementById('today').textContent=now.toLocaleDateString('hi-IN',{day:'numeric',month:'long',year:'numeric'});document.getElementById('year').textContent=now.getFullYear();
+let allNews=[];let activeCategory='all';
+const grid=document.getElementById('news-grid'),search=document.getElementById('news-search');
+function safe(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderNews(){const term=search.value.trim().toLocaleLowerCase('hi');const filtered=allNews.filter(item=>{const cat=String(item.category||'स्थानीय');const matchesCategory=activeCategory==='all'||cat===activeCategory;const hay=[item.title,item.summary,item.category].join(' ').toLocaleLowerCase('hi');return matchesCategory&&hay.includes(term);});if(!filtered.length){grid.innerHTML='<div class="empty">इस श्रेणी में अभी कोई खबर उपलब्ध नहीं है।</div>';return;}grid.innerHTML=filtered.map(item=>{const title=safe(item.title||'बिना शीर्षक की खबर');const category=safe(item.category||'स्थानीय');const summary=safe(item.summary||'');const date=safe(item.displayDate||item.date||'');const photo=item.image?'<img class="news-photo" src="'+safe(item.image)+'" alt="'+title+'" loading="lazy" onerror="this.style.display=\'none\'">':'<div class="news-placeholder">📰</div>';return '<article class="news-card">'+photo+'<div class="news-content"><span class="category">'+category+'</span><h3>'+title+'</h3><p>'+summary+'</p><div class="news-date">'+date+'</div></div></article>';}).join('');}
+async function loadNews(){try{const response=await fetch('./news.json',{cache:'no-store'});if(!response.ok)throw new Error('News unavailable');const data=await response.json();if(!Array.isArray(data))throw new Error('Invalid news data');allNews=data.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));renderNews();}catch(error){grid.innerHTML='<div class="empty">खबरें अभी लोड नहीं हो पाईं। कृपया थोड़ी देर बाद फिर कोशिश करें।</div>';}}
+document.getElementById('news-filters').addEventListener('click',event=>{const button=event.target.closest('button[data-category]');if(!button)return;activeCategory=button.dataset.category;document.querySelectorAll('.filter').forEach(item=>item.classList.toggle('active',item===button));renderNews();});
+search.addEventListener('input',renderNews);loadNews();
 </script>
 </body></html>
