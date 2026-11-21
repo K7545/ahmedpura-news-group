@@ -107,6 +107,25 @@ footer strong{font-size:17px;letter-spacing:.2px}
  .hero-actions{gap:8px}
 }
 
+
+/* Compact single-row contact details */
+.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.contact-card{gap:7px;padding:8px 9px;border-radius:10px;min-width:0;overflow:hidden}
+.contact-icon-wrap{width:28px;height:28px;flex:0 0 28px;border-radius:8px}
+.contact-icon-wrap svg{width:16px;height:16px}
+.contact-copy{gap:1px;min-width:0}
+.contact-copy small{font-size:9px;white-space:nowrap}
+.contact-copy strong{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.contact-arrow{display:none}
+@media(max-width:420px){
+ .contact-links{gap:5px}
+ .contact-card{gap:5px;padding:7px 5px}
+ .contact-icon-wrap{width:24px;height:24px;flex-basis:24px}
+ .contact-icon-wrap svg{width:14px;height:14px}
+ .contact-copy small{font-size:8px}
+ .contact-copy strong{font-size:9px}
+}
+
 </style>
 </head>
 <body>
