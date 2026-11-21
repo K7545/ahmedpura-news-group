@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102b46"><title>News Manager | Ahmedpura News Group</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fa;color:#172334;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}.wrap{max-width:760px;margin:24px auto;padding:0 14px}.head{background:#102b46;color:white;padding:20px;border-radius:14px}.head h1{font-size:22px;margin:0 0 5px}.head p{margin:0;color:#d7e5f2;font-size:13px}.panel{background:white;border:1px solid #e1e8ef;border-radius:14px;padding:18px;margin-top:16px}label{display:block;font-size:13px;font-weight:750;margin:13px 0 6px}input,textarea{width:100%;padding:12px;border:1px solid #ccd6e0;border-radius:9px;font:inherit;font-size:14px}textarea{min-height:105px;resize:vertical}button{border:0;border-radius:9px;padding:12px 15px;font:inherit;font-weight:750;cursor:pointer}.primary{background:#174d78;color:white}.secondary{background:#eaf1f7;color:#174d78}.danger{background:#fff0f1;color:#b91c32}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.item{border:1px solid #e1e8ef;border-radius:10px;padding:12px;margin-top:10px}.item strong{display:block}.muted{color:#657386;font-size:12px}.notice{background:#fff7e6;border:1px solid #f4d79a;padding:12px;border-radius:10px;font-size:13px;line-height:1.6;margin-top:14px}.hidden{display:none}
+</style></head><body><main class="wrap">
+<div class="head"><h1>Ahmedpura News Group</h1><p>News Manager · खबरें तैयार करें और news.json डाउनलोड करें</p></div>
+<div class="notice"><strong>ध्यान दें:</strong> यह टूल खबरों की JSON फाइल तैयार करता है। वेबसाइट पर खबर प्रकाशित करने के लिए डाउनलोड की गई <b>news.json</b> फाइल को GitHub में पुरानी फाइल की जगह अपलोड करना होगा। इस पेज में GitHub पासवर्ड या token कभी न डालें।</div>
+<section class="panel"><h2 style="margin:0">नई खबर जोड़ें</h2>
+<label for="title">खबर की हेडलाइन *</label><input id="title" maxlength="140" placeholder="जैसे: अहमदपुरा में..." />
+<label for="category">कैटेगरी</label><input id="category" maxlength="40" value="स्थानीय समाचार" />
+<label for="summary">खबर की जानकारी *</label><textarea id="summary" maxlength="1200" placeholder="खबर की पूरी और सत्यापित जानकारी लिखें"></textarea>
+<label for="date">खबर की तारीख *</label><input id="date" type="date" />
+<label for="image">फोटो का URL (वैकल्पिक)</label><input id="image" type="url" placeholder="https://... फोटो का सीधा लिंक" />
+<div class="actions"><button class="primary" id="add">खबर सूची में जोड़ें</button><button class="secondary" id="download">news.json डाउनलोड करें</button></div>
+<p class="muted" id="status" aria-live="polite">पहले मौजूदा खबरें लोड की जा रही हैं...</p>
+</section>
+<section class="panel"><h2 style="margin:0">खबरों की सूची</h2><div id="list"></div></section>
+</main>
+<script>
+let news=[];
+const $=id=>document.getElementById(id);
+function show(){const list=$('list');if(!news.length){list.innerHTML='<p class="muted">अभी सूची खाली है।</p>';return;}list.innerHTML=news.map((n,i)=>'<div class="item"><strong>'+esc(n.title)+'</strong><div class="muted">'+esc(n.category)+' · '+esc(n.displayDate||n.date)+'</div><p>'+esc(n.summary)+'</p><button class="danger" data-remove="'+i+'">हटाएँ</button></div>').join('');}
+function esc(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function init(){try{const r=await fetch('../news.json',{cache:'no-store'});if(!r.ok)throw Error();news=await r.json();if(!Array.isArray(news))news=[];$('status').textContent='मौजूदा '+news.length+' खबरें लोड हो गईं।';}catch(e){$('status').textContent='मौजूदा खबरें लोड नहीं हुईं। खाली सूची से शुरुआत होगी।';news=[];}show();}
+$('add').addEventListener('click',()=>{const title=$('title').value.trim(),summary=$('summary').value.trim(),date=$('date').value;if(!title||!summary||!date){$('status').textContent='हेडलाइन, जानकारी और तारीख भरें।';return;}const image=$('image').value.trim();if(image&&!/^https:\/\//i.test(image)){$('status').textContent='फोटो का URL https:// से शुरू होना चाहिए।';return;}news.unshift({title,category:$('category').value.trim()||'समाचार',summary,date,displayDate:new Date(date+'T12:00:00').toLocaleDateString('hi-IN'),image});$('title').value='';$('summary').value='';$('image').value='';$('status').textContent='खबर सूची में जुड़ गई। अब news.json डाउनलोड करें।';show();});
+$('list').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(!b)return;news.splice(Number(b.dataset.remove),1);show();$('status').textContent='खबर हटाई गई। बदलाव रखने के लिए JSON दोबारा डाउनलोड करें।';});
+$('download').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(news,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='news.json';a.click();URL.revokeObjectURL(url);$('status').textContent='news.json डाउनलोड हो गई। इसे GitHub में पुरानी news.json की जगह अपलोड करें।';});
+$('date').value=new Date().toISOString().slice(0,10);init();
+</script></body></html>
